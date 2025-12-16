@@ -1,4 +1,4 @@
-# kaleidpixel/utility
+# kaleidpixel/utility-headers
 
 A secure, lightweight utility library for PHP 8.4+, designed for strict infrastructure environments.
 Currently features a robust **HTTP Header Inspection Tool** (`headerinfo`).
@@ -30,7 +30,8 @@ Currently features a robust **HTTP Header Inspection Tool** (`headerinfo`).
 Install the package via Composer:
 
 ```bash
-composer require kaleidpixel/utility
+composer require kaleidpixel/utility-headers
+
 ```
 
 ## Usage
@@ -50,6 +51,7 @@ require __DIR__ . '/vendor/autoload.php';
 
 // Dump headers and stop execution
 headerinfo();
+
 ```
 
 #### Using the Class (Namespace)
@@ -59,13 +61,13 @@ If you prefer not to use the global function or want to integrate it into a spec
 ```php
 <?php
 
-use kaleidpixel\utility\headerinfo\HeaderInfo;
+use kaleidpixel\utility\headerinfo;
 
 require __DIR__ . '/vendor/autoload.php';
 
 // Renders the template
 HeaderInfo::render();
-exit;
+
 ```
 
 ## Features
@@ -84,13 +86,12 @@ This package is designed as a collection of utilities.
 ```text
 kaleidpixel/utility
 ├── src/
-│   ├── headerinfo/       # Header Inspection Module
-│   │   ├── HeaderInfo.php
-│   │   ├── templates/
-│   │   └── i18n/
-│   ├── (future-module)/  # Future utilities (e.g., 'hoge', 'fuga')
-│   └── functions.php     # Global helper functions
+│   ├── i18n/
+│   ├── templates/
+│   ├── HeaderInfo.php
+│   └── functions.php
 └── composer.json
+
 ```
 
 ## License

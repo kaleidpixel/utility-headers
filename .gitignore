@@ -448,3 +448,5 @@ wpcs/*
 *.css.map
 *.sass.map
 *.scss.map
+
+index.php
