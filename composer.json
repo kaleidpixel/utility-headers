@@ -8,7 +8,7 @@
     },
     "autoload": {
         "psr-4": {
-            "kaleidpixel\\utility\\headerinfo\\": "src/"
+            "kaleidpixel\\utility\\": "src/"
         },
         "files": [
             "src/functions.php"
