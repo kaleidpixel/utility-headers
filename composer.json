@@ -1,0 +1,17 @@
+{
+    "name": "kaleidpixel/utility-headerinfo",
+    "description": "Secure Header and Server Information Utility",
+    "type": "library",
+    "license": "MIT",
+    "require": {
+        "php": "^8.4"
+    },
+    "autoload": {
+        "psr-4": {
+            "kaleidpixel\\utility\\headerinfo\\": "src/"
+        },
+        "files": [
+            "src/functions.php"
+        ]
+    }
+}
